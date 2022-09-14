@@ -38,7 +38,7 @@ export const initializeChatSDK = ({accessToken, walletSignature}) => {
 initializeChatSDK({accessToken: receiverToken, walletSignature: user.signature});
 
 const data = {address: user.address}
-let convos = await getConversations(data, handleError);
+let convos = await chatSDK.getConversations(data, handleError);
 
 console.log(convos)
 ```
