@@ -2,11 +2,11 @@
 Different functions to access chat API
 
 #### getConversation(data, errorHandler)
-data: {receiverAddress, address, signature}<br/>
+data: {receiverAddress, address}<br/>
 returns a conversation or null
 
 #### getConversations(data, errorHandler);
-data: {address, signature}<br/>
+data: {address}<br/>
 returns an array of conversations for the given address
 
 #### getMessages(data, errorHandler)
@@ -42,4 +42,4 @@ let convos = await getConversations(data, handleError);
 
 console.log(convos)
 ```
-# Chat_SDK
+
