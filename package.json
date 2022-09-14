@@ -1,6 +1,6 @@
 {
   "name": "@amurse/chat_sdk",
-  "version": "1.0.20",
+  "version": "1.0.25",
   "description": "functions to access chat api given a token",
   "main": "index.js",
   "scripts": {

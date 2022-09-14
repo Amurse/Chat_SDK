@@ -17,22 +17,27 @@ returns an array of messages for conversation
 data: {text, address, convoId, convoIndex}
 returns true if message created
 
-### initializeChatSDK(data)
-data: {token, signature}
-initializes the SDK for use
+### Setting UP
+The SDK is a class which exposes the above functions. 
+It must be initialized through a constructor requiring 2 things:
+1. accessToken 
+2. walletSignature
 
 ### Code Example
 ```
 yarn add '@amurse/chat_sdk';
 
-import {getConversations, initializeChatSDK} from '@amurse/chat_sdk';
+import {amurseChatSDK} from '@amurse/chat_sdk';
 
-const handleError = (err) => {
-  console.log(err)
-};
+let chatSDK;
 
-initializeChatSDK({token: receiverToken, signature: user.signature});
-const data = {address: user.address, signature: user.signature}
+//could be called from other files
+export const initializeChatSDK = ({accessToken, walletSignature}) => {
+  chatSDK = new amurseChatSDK({accessToken, walletSignature});
+}
+initializeChatSDK({accessToken: receiverToken, walletSignature: user.signature});
+
+const data = {address: user.address}
 let convos = await getConversations(data, handleError);
 
 console.log(convos)
