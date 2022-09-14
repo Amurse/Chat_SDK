@@ -1,0 +1,16 @@
+{
+  "name": "@amurse/chat_sdk",
+  "version": "1.0.20",
+  "description": "functions to access chat api given a token",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amritpal Chera (cheraamritpal@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "@amurse/axios_sdk": "^1.0.1",
+    "axios": "^0.27.2",
+    "web3": "^1.7.5"
+  }
+}
