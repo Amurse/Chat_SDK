@@ -8,6 +8,10 @@
   },
   "author": "Amritpal Chera (cheraamritpal@gmail.com)",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Amurse/Chat_SDK"
+  },
   "dependencies": {
     "@amurse/axios_sdk": "^1.0.1",
     "axios": "^0.27.2",
