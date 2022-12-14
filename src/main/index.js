@@ -1,8 +1,8 @@
 
-const validations = require('./components/validations');
+const validations = require('../components/validations');
 const axiosGenerater = require('@amurse/axios_sdk');
 
-class amurseChatSDK {
+class AmurseChatSDK {
   constructor(props) {
     this.token = props.accessToken;
     this.signature = props.walletSignature;
@@ -48,9 +48,8 @@ class amurseChatSDK {
       { text, address, convoId, convoIndex, token: this.token, signature: this.signature }).then(res => res.data)
       .catch(err => {errorHandler && errorHandler(err)});
   }
+  
 }
 
 
-module.exports = {
-  amurseChatSDK
-}
+module.exports = AmurseChatSDK;

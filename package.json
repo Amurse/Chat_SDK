@@ -1,10 +1,11 @@
 {
   "name": "@amurse/chat_sdk",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "description": "functions to access chat api given a token",
-  "main": "index.js",
+  "main": "./src/main/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "author": "Amritpal Chera (cheraamritpal@gmail.com)",
   "license": "ISC",
@@ -16,5 +17,8 @@
     "@amurse/axios_sdk": "^1.0.1",
     "axios": "^0.27.2",
     "web3": "^1.7.5"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
   }
 }
